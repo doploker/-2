@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* неплохо, хорошо */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');  
 
-header{
+/* странно почему не убрал поля которые установлены по дефолту */
+/* body {
+    margin: 0;
+} */
+
+header { /* лучше .header */
     width: 1920px;
     height: 150px;
     display: flex;
 }
 
 .header_content{
-    width: 1596px;
+    width: 1596px; /* max-width правильное решение, чтобы не было статичного размера 1596px */
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -16,19 +22,26 @@ header{
 
 
 .menu{
-    width: 1244px; 
+    width: 1244px; /* чаще используй max-width */
     height: 36px;
     gap: 80px;
     display: flex;
     justify-content: center;
 }
 
+/*
+.uppercase {
+    text-transofrm: uppercase;
+}
+*/
+
 .textmenu{
     color: rgba(255, 161, 94, 1);
     font-size: 30px;
-    font-family: "Inter";
+    font-family: "Inter"; /* не очень хорошо, ты мог глобальный стиль сделать вот так: * { font-family: "Inter"; } */
     margin: 0px;
     font-weight: 600;
+    /*text-transform: uppercase;*/
 }
 
 main{
@@ -40,8 +53,9 @@ main{
 .hero{
     width: 1596px;
     height: 700px;
-    margin-top: 62px;
-    margin-left: 162px;
+    margin-top: 62px; 
+    margin-left: 162px; /* о нет, я непонимаю зачем, скорее просто пытался таким способом выравнить блок по центру но это не то*/
+    /*Решение: margin: 62px auto auto 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +128,7 @@ main{
 }
 
 .devochka{
-    width: 304.16473388671875px;
+    width: 304.16473388671875px; /* ого... я таких цифр не ставил */
     height: 551px;
 }
 
@@ -124,12 +138,12 @@ main{
     font-family: 'Inter';
     font-weight: 800;
     font-size: 90px;
-    line-height: 100%;
-    text-transform: uppercase;
+    line-height: 100%; /* по требованию получилось, но технически сделал неправильно */
+    text-transform: uppercase; /* о оно че, ну ты магеж */
     margin: 0;
 }
 
-.textrep{
+.textrep{ /*Что? Текст треп?*/
     width: 789px;
     height: 77px;
     font-family: 'Inter';
@@ -149,7 +163,7 @@ main{
     margin-top: 50px;
 }
 
-p,li{
+p,li{ /* допустим... */
     font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
@@ -157,7 +171,7 @@ p,li{
     margin: 0;
 }
 
-.gallery{
+.gallery{ /* найс */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,7 +330,7 @@ p,li{
     height: 688px;
     gap: 10px;
     border-radius: 32px;
-    border: 7px,solid rgba(183, 183, 183, 1);
+    border: 7px,solid rgba(183, 183, 183, 1); /* воу воу воу, это что за запятая после 7px; туда ее ставить не надо*/
 }
 
 .invite-h1{
@@ -327,5 +341,4 @@ p,li{
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-
 }
