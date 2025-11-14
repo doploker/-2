@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* { font-family: "Inter"; }
+
+/* .wrapper{
+    margin: 0 auto;
+    max-width: 1920px;
+} */
+
+.center-block{
+    margin: 0 auto;
+}
+
 header{
     width: 1920px;
     height: 150px;
@@ -26,14 +37,13 @@ header{
 .textmenu{
     color: rgba(255, 161, 94, 1);
     font-size: 30px;
-    font-family: "Inter";
     margin: 0px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 main{
     width: 1920px;
-    height: 823px;
     margin-top: 150px;
 }
 
@@ -41,7 +51,6 @@ main{
     width: 1596px;
     height: 700px;
     margin-top: 62px;
-    margin-left: 162px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,35 +69,36 @@ main{
     height: 463px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.mboy{
-    font-family: 'Inter';
+.textschool1{
     font-weight: 800;
     font-size: 64px;
     margin: 0;
     color: rgba(255, 123, 29, 1);
+    text-transform: uppercase;
 }
 
-.school{
-    font-family: 'Inter';
+.textschool2{
     font-weight: 800;
     font-size: 90px;
     margin: 0;
+    text-transform: uppercase;
     color: rgba(104, 43, 0, 1);
 }
 
 .button1{
     width: 303px;
     height: 81px;
-    gap: 10px;
+
     border-radius: 41px;
     background: rgba(255, 161, 94, 1);
-    font-family: 'Inter';
     font-weight: 800;
     font-size: 30px;
     color: white;
     border: 0;
+    text-transform: uppercase;
 }
 
 .contentin{
@@ -107,21 +117,20 @@ main{
 
 .about-frame{
     width: 1274px;
-    height: 551px;
+    height: 550px;
     gap: 33px;
     display: flex;
     justify-content: space-between;
 }
 
 .devochka{
-    width: 304.16473388671875px;
-    height: 551px;
+    width: 300px;
+    height: 550px;
 }
 
-.onas{
+.about1{
     width: 789px;
     height: 109px;
-    font-family: 'Inter';
     font-weight: 800;
     font-size: 90px;
     line-height: 100%;
@@ -132,7 +141,6 @@ main{
 .textrep{
     width: 789px;
     height: 77px;
-    font-family: 'Inter';
     font-weight: 700;
     font-size: 64px;
     line-height: 100%;
@@ -150,7 +158,6 @@ main{
 }
 
 p,li{
-    font-family: 'Inter';
     font-weight: 400;
     font-size: 20px;
     line-height: 100%;
@@ -161,7 +168,7 @@ p,li{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .block{
@@ -171,7 +178,6 @@ p,li{
 }
 
 .gallery-text{
-    font-family: Inter;
     font-weight: 800;
     font-style: Extra Bold;
     font-size: 90px;
@@ -236,6 +242,13 @@ p,li{
     align-items: center;
 }
 
+.contact-h1{
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
 .split{
     display: flex;
     width: 1596px;
@@ -269,11 +282,9 @@ p,li{
 }
 
 .button2{
-    font-family: Inter;
     font-weight: 800;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 7%;
     text-transform: uppercase;
     background: rgba(255, 161, 94, 1);
     color: white;
@@ -281,6 +292,7 @@ p,li{
     height: 84px;
     gap: 10px;
     border-radius: 326px;
+    border: 0;
 }
 
 .request{
@@ -304,10 +316,11 @@ p,li{
 .frame-7{
     width: 627px;
     height: 688px;
-    gap: 20px;
     border-radius: 32px;
     border: 6px,solid rgba(183, 183, 183, 1);
     display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -320,12 +333,68 @@ p,li{
 }
 
 .invite-h1{
-    font-family: Inter;
     font-weight: 800;
     font-size: 90px;
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
     text-transform: uppercase;
-
 }
+
+.forma-text{
+    font-weight: 800;
+    font-size: 61px;
+    text-transform: uppercase;
+    display: flex;
+    
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    width: 527px;
+    height: 100px;
+    border-radius: 38px;
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: rgba(218, 218, 218, 1);
+    color: rgba(80, 80, 80, 1);
+}
+ .button3{
+    border:0px;
+    width: 527px;
+    height: 100px;
+    border-radius: 326px;
+    background-color: rgba(255, 161, 94, 1);
+    gap: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+ }
+
+ footer{
+    width: 100%;
+    height: 200px;
+    background: rgba(255, 199, 80, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .footer-text{
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: white;
+ }
