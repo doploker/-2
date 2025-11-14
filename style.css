@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* { font-family: "Inter"; }
+* { font-family: "Inter"; box-sizing: border-box; }
 
 /* .wrapper{
     margin: 0 auto;
     max-width: 1920px;
 } */
+
+h1 {
+    margin: 0;
+}
 
 .center-block{
     margin: 0 auto;
@@ -15,13 +19,14 @@ header{
     width: 1920px;
     height: 150px;
     display: flex;
+    align-items: center;
 }
 
 .header_content{
     width: 1596px;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
     align-items: center;
 }
 
@@ -31,7 +36,6 @@ header{
     height: 36px;
     gap: 80px;
     display: flex;
-    justify-content: center;
 }
 
 .textmenu{
@@ -48,20 +52,40 @@ main{
 }
 
 .hero{
-    width: 1596px;
-    height: 700px;
-    margin-top: 62px;
+    max-width: 1920px;
     display: flex;
     justify-content: center;
+    padding-top: 62px;
+    padding-bottom: 61px;
+}
+
+.subhero {
+    width: 1596px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.kartinka1{
+
+.kartinka1 {
     width: 788px;
     height: 700px;
     border: 16px solid rgba(216, 216, 216, 1);
     border-radius: 34px;
-    gap: 10px;
+    object-fit: cover;
+}
+
+.button1{
+    width: 303px;
+    height: 81px;
+    letter-spacing: 3px;
+    border-radius: 41px;
+    background: rgba(255, 161, 94, 1);
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+    border: 0;
+    text-transform: uppercase;
 }
 
 .leftcontent{
@@ -72,10 +96,13 @@ main{
     justify-content: space-between;
 }
 
+.contentin{
+
+}
+
 .textschool1{
     font-weight: 800;
     font-size: 64px;
-    margin: 0;
     color: rgba(255, 123, 29, 1);
     text-transform: uppercase;
 }
@@ -83,28 +110,8 @@ main{
 .textschool2{
     font-weight: 800;
     font-size: 90px;
-    margin: 0;
     text-transform: uppercase;
     color: rgba(104, 43, 0, 1);
-}
-
-.button1{
-    width: 303px;
-    height: 81px;
-
-    border-radius: 41px;
-    background: rgba(255, 161, 94, 1);
-    font-weight: 800;
-    font-size: 30px;
-    color: white;
-    border: 0;
-    text-transform: uppercase;
-}
-
-.contentin{
-    width: 626;
-    height: 186;
-    opacity: 1;
 }
 
 .about{
